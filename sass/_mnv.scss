@@ -1,3 +1,35 @@
+@mixin shadowtext {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+
 .overflowX {
   overflow-x: hidden;
+}
+
+.actionHeader {
+  font-weight: bold;
+  @include shadowtext;
+}
+
+.actBtn {
+  border-radius: 50%;
+  background-color: #feee99;
+  width: 25%;
+  margin: auto;
+  padding: 35px;
+}
+
+.actBtn:hover {
+  transform: scale(1.25);
+  background-color: black;
+  width: 25%;
+  margin: auto;
+}
+
+.rSpace {
+  margin: 30px;
 }
